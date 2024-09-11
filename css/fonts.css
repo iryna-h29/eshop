@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../assets/fonts/Raleway-Light.woff2');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../assets/fonts/Raleway-Regular.woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../assets/fonts/Raleway-SemiBold.woff2');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../assets/fonts/Raleway-Bold.woff2');
+    font-weight: 700;
+    /* font-feature-settings: 'lnum' on; */
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../assets/fonts/Raleway-Thin.woff2');
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'Dela Gothic One';
+    src: url('../assets/fonts/DelaGothicOne-Regular.woff2');
+    font-weight: 400;
+}

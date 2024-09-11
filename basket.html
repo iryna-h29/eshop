@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etnodim - український бренд вишиванок</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/basket.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="basket-container"> 
+        <header class="header">
+            <div id="myOverlay" class="overlay">  
+                <div class="overlay-content"> 
+                    <span class="closebtn" 
+                        onclick="closeSearch()"
+                        title="Закрити вікно пошуку"
+                        aria-label="Закрити вікно пошуку"> 
+                        × 
+                    </span>
+                    <form action="" method="post"> 
+                    <input type="text" 
+                            placeholder="Пошук на сайті.." 
+                            name="search" /> 
+                    <div class="result">
+                        <span>sdsdfsd</span>
+                    </div>
+                    </form> 
+                </div> 
+            </div>
+            <nav class="header__nav-menu" id="menu">
+                <div class="header__burger" onclick="toggleMobileMenu()" id="burger-bar" aria-label="відкрити меню" role="button">
+                    <div class="header__burger_bar"></div>
+                    <div class="header__burger_bar"></div>
+                    <div class="header__burger_bar"></div>
+                </div>
+                <ul class="header__menu-items">
+                    <li class="header__menu-item">
+                        <a href="./index.html" class="header__menu-item-link">Каталог</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="" class="header__menu-item-link">Знижки</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="" class="header__menu-item-link">Блог</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="" class="header__menu-item-link">Про нас</a>
+                    </li>
+                    <li class="header__menu-item header__menu-list-additional" aria-label="валюта">
+                        <a href="" class="header__menu-list-additional-link" aria-label="обрати мову українську">UA</a>
+                        <a href="" class="header__menu-list-additional-link" aria-label="обрати мову англійську">EN</a>
+                        <div class="header__menu-item-line">|</div> 
+                        <a href="#" class="header__menu-list-currency">
+                            <img src="./assets/icons/hryvna.svg" alt="гривня">
+                        </a>
+                        <a href="#" class="header__menu-list-currency header__menu-list-currency-dollar">
+                            <img src="./assets/icons/dollar.svg" alt="доллар">
+                        </a>
+                        <a href="#" class="header__menu-list-currency header__menu-list-currency-euro">
+                            <img src="./assets/icons/euro.svg" alt="євро">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__main-logo" id="main-logo" aria-label="логотип Etnodim">
+                <a href="#">
+                    <picture>
+                        <source
+                            srcset="./assets/logo/logo-main-mb.svg" class="header__logo-img"
+                            media="(max-width: 600px)"
+                        >
+                        <img src="./assets/logo/logo-main.svg" alt="логотип" class="header__logo-img">
+                    </picture>
+                </a>
+            </div>
+            <div class="header__action-menu" aria-label="обрати мову, валюту, телефон, пошук та кошик">
+                <ul class="header__action-menu-items">
+                    <li class="header__action-menu-item header__languages" aria-label="Мова">
+                        <select name="language" class="header__languages-select" aria-label="Обрати мову та валюту інтерфейсу">
+                            <option value="uk" aria-label="українська, гривня">UA | &#8372</option>
+                            <option value="cs" lang="cs" aria-label="česky, česká koruna">CZ | Kč</option>
+                            <option value="en" lang="en" aria-label="english, euro">EN | &euro;</option>
+                        </select>
+                    </li>
+                    <li class="header__action-menu-item header__tel">
+                        <a href="tel:+38 097 888 92 92" class="header__tel-link">
+                            +38 097 888 92 92
+                        </a>
+                        <a href="tel:+38 097 888 92 92" class="header__tel-icon">
+                            <svg class="icon">
+                                <use xlink:href="#phone-solid"></use>
+                            </svg>
+                        </a>
+                        <svg width="0" height="0" class="hidden">
+                            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="phone-solid">
+                              <path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"></path>
+                            </symbol>
+                        </svg>
+                    </li>
+                    <li class="header__action-menu-item">
+                        <a href="#" class="header__action-menu-icon-search" aria-label="пошук на сайті" role="button">
+                            <img src="./assets/icons/ei_search.svg" alt="пошук">
+                        </a>
+                        <a href="#" class="header__action-menu-icon-cart" aria-label="кошик обраних товарів" role="button">
+                            <img src="./assets/icons/cart.svg" alt="кошик">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="subheader" aria-label="ви знаходитесь на сторінці:">
+            <div class="subheader__path-wrapper">
+                <a href="#" class="subheader__path-root">Головна</a>
+                <a href="#" class="subheader__path-root">Жінкам</a>
+                <a href="./index.html" class="subheader__path-root">Жіночі вишиванки</a>
+            </div>
+        </div>
+        <main class="main__basket">
+            <section class="basket__products-info">
+                <ul class="basket__products_seznam" title="список товарів у кошику">
+                    <li class="basket__product_item">
+                        <img src="./assets/img/image1_mini-mobile.jpg" alt="" class="basket__product-image">
+                        <div class="basket__product-info">
+                            <div class="basket__product-info-item name-characters-product">
+                                <h2 class="basket__product-name">Вишиванка з рослинним орнаментом Lito</h2>
+                                <div class="basket__product-additional">
+                                    <div>
+                                        <span class="basket__product-label">Колір:</span>
+                                        <span class="basket__product-color">бежевий</span>
+                                    </div>
+                                    <div>
+                                        <span class="basket__product-label">Розмір:</span>
+                                        <select name="size" id="size">
+                                            <option value="S">42-44 | S</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket__product-info-item product-price">
+                                <h4>Ціна</h4>
+                                <div class="basket__product-purchase-info-price">
+                                    <span class="price">2 800</span>
+                                    <span class="current-currency">грн.</span>
+                                </div>
+                            </div>
+                            <div class="basket__product-info-item quantity">
+                                <h4>Кількість</h4>
+                                <div class="basket__product-purchase-info-quantity">
+                                    <button class="basket__amount-btn">
+                                        <img src="./assets/icons/product/minus.svg" alt="">
+                                    </button>
+                                    <span class="basket__amount-number">1</span>
+                                    <button class="basket__amount-btn">
+                                        <img src="./assets/icons/product/plus.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="basket__product-info-item total">
+                                <h4>Cума</h4>
+                                <div class="basket__total">
+                                    <span class="basket__sum">2800</span>
+                                    <span class="basket__currency">грн.</span>
+                                </div>
+                            </div>
+                            <button class="basket__product-info-item basket__button-close" title="видалити товар" aria-label="видалити товар">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L17 17M17 1L1 17" stroke="#939694"/>
+                                </svg>                                    
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="basket__products-result-info">
+                <div class="basket__product-total">
+                    <strong>До сплати</strong>
+                    <strong><span class="basket__sum">2 800</span><span class="basket__current-currency"> грн.</span></strong>
+                </div>
+                <div class="basket__buttons-wrapper">
+                    <button class="basket__order-btn">оформити замовлення</button>
+                    <a href="" class="basket__continue-shopping">продовжити покупки</a>
+                </div>
+            </section>
+            <section class="basket__additional-section">
+                <div class="basket__additional-info">
+                    <p>Не турбуйтесь якщо вам не підійде розмір, всі моделі мають різний крій: одні маломірні, інші повнорозмірні. На кожен наш товар розповсюджується гарантія, яка дозволяє обміняти або повернути річ протягом 31го дня після дати покупки.</p>
+                    <p>Таке повернення можливе за умови, якщо товар не був у використанні. Зверніться до менеджера магазину, він надасть вам більш детальну інформацію :)</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="footer" aria-label="Інформація про магазин та кнопка повернутися нагору сторінки">
+        <div class="footer__logo" aria-label="Інформація про магазин">
+            <a href="#">
+                <picture>
+                    <source
+                        srcset="./assets/logo/logo-main-mb.svg" class="footer__logo-img"
+                        media="(max-width: 600px)"
+                        alt="логотип магазину Етнодім"
+                    >
+                    <img src="./assets/logo/logo-main.svg" alt="логотип магазину Етнодім" class="footer__logo-img">
+                </picture>
+            </a>
+        </div>
+        <div class="footer__content" aria-label="Інформація про магазин">
+            <div class="footer__additional-info">
+                <div class="footer__additional footer_additional-about">
+                    <li class="footer__additional-item"><a href="">Про нас</a></li>
+                    <li class="footer__additional-item"><a href="">Команда</a></li>
+                    <li class="footer__additional-item"><a href="">Блог</a></li>
+                    <li class="footer__additional-item"><a href="">Drabyna</a></li>
+                </div>
+                <div class="footer__additional footer_additional-other">
+                    <li class="footer__additional-item"><a href="">Цікава інформація</a></li>
+                    <li class="footer__additional-item"><a href="">Вакансії</a></li>
+                    <li class="footer__additional-item"><a href="">Доставка та оплата</a></li>
+                    <li class="footer__additional-item"><a href="">Етнодім Маніфест</a></li>
+                </div>
+            </div>
+            <div class="footer__additional-contact">
+                <div class="footer__heading">
+                    Контакти
+                </div>
+                <li class="footer_additional-contact-item"><a href="tel:+38 097 888 92 92">+38 097 888 92 92</a></li>
+                <li class="footer_additional-contact-item">
+                    <address>
+                        Україна, м. Київ, вул. Верхній Вал 58/28
+                    </address>
+                </li>
+                <li class="footer_additional-contact-item" aria-label="Розклад роботи магазину">
+                    <span>пн-пт 10:00-20:00
+                    </span>
+                    <span>сб-нд 11:00-19:00</span>
+                </li>
+            </div>
+            <div class="footer__social-medias">
+                <div class="footer__heading">
+                    Соціальні мережі
+                </div>
+                <ul class="footer__social-medias-list">
+                    <li class="footer__social-medias-item"><a href="https://www.facebook.com/etnodim" target="_blank"><img src="./assets/icons/facebook.svg" alt=""></a></li>
+                    <li class="footer__social-medias-item"><a href="https://www.youtube.com/channel/UCKORrzWYqFtAJUFRySXG8IA" target="_blank"><img src="./assets/icons/youtube.svg" alt=""></a></li>
+                    <li class="footer__social-medias-item"><a href="mailto:etnodim@gmail.com"><img src="./assets/icons/mail.svg" alt=""></a></li>
+                    <li class="footer__social-medias-item"><a href="https://www.pinterest.com/etnodim/" target="_blank"><img src="./assets/icons/pinterest.svg" alt=""></a></li>
+                    <li class="footer__social-medias-item"><a href="https://www.instagram.com/etnodim/" target="_blank"><img src="./assets/icons/instagram.svg" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="footer__copyright">
+                © «Етнодім» 2009-2023
+            </div>
+        </div>
+    </footer>
+    <script src="js/header.js"></script>
+</body>
+</html>
